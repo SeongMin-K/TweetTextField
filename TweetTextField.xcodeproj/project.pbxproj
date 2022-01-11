@@ -13,6 +13,7 @@
 		3EF66CC4278D5CFD00E48C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF66CC2278D5CFD00E48C09 /* Main.storyboard */; };
 		3EF66CC6278D5CFE00E48C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EF66CC5278D5CFE00E48C09 /* Assets.xcassets */; };
 		3EF66CC9278D5CFE00E48C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF66CC7278D5CFE00E48C09 /* LaunchScreen.storyboard */; };
+		3EF66CD2278D5D4500E48C09 /* TweeTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 3EF66CD1278D5D4500E48C09 /* TweeTextField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF66CD2278D5D4500E48C09 /* TweeTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TweetTextField;
+			packageProductDependencies = (
+				3EF66CD1278D5D4500E48C09 /* TweeTextField */,
+			);
 			productName = TweetTextField;
 			productReference = 3EF66CB9278D5CFD00E48C09 /* TweetTextField.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 3EF66CB0278D5CFD00E48C09;
+			packageReferences = (
+				3EF66CD0278D5D4500E48C09 /* XCRemoteSwiftPackageReference "TweeTextField" */,
+			);
 			productRefGroup = 3EF66CBA278D5CFD00E48C09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3EF66CD0278D5D4500E48C09 /* XCRemoteSwiftPackageReference "TweeTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/oleghnidets/TweeTextField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3EF66CD1278D5D4500E48C09 /* TweeTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3EF66CD0278D5D4500E48C09 /* XCRemoteSwiftPackageReference "TweeTextField" */;
+			productName = TweeTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3EF66CB1278D5CFD00E48C09 /* Project object */;
 }
